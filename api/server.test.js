@@ -22,7 +22,7 @@ describe('[GET] /', () => {
   it('returns a status 200 OK', async () => {
     const res = await request(server).get('/')
     expect(res.status).toBe(200)
-    // expect(res.body).toMatchObject({ api: 'up' })
+    expect(res.body).toMatchObject({ api: 'up!' })
     expect(res.body).toMatchSnapshot()
   })
 })
