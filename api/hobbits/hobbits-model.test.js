@@ -46,7 +46,7 @@ describe('hobbits model', () => {
       expect(bilbo).toMatchObject({ "id": 5, "name": "bilbo" })
 
       // probably should be a different test
-      const data = await Hobbit.getAll() // DO NOT DO Hobbit.getAll HERE!!!!
+      const data = await db('hobbits') // DO NOT DO Hobbit.getAll HERE!!!!
       expect(data).toHaveLength(5)
     })
   })
