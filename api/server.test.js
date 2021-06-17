@@ -32,6 +32,8 @@ describe('[POST] /hobbit', () => {
     expect(res.status).toBe(201)
   })
   it('returns newly created hobbit', async () => {
-    // here 
+    const res = await request(server).post('/hobbits').send({ name: 'bilbo' })
+    expect(res.status).toBe(201);
+    expect(res.data).toMatchObject({ id: res.data.id, name: 'bilbo' })
   })
 })
