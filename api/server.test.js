@@ -13,3 +13,7 @@ beforeEach(async () => {
 afterAll(async () => {
   await db.destroy()
 })
+
+test('sanity', () => {
+  expect(true).toBeTruthy()
+})
