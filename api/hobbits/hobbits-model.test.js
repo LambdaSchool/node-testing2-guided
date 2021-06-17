@@ -10,7 +10,8 @@ beforeAll(async () => {
   await db.migrate.latest()
 })
 beforeEach(async () => {
-  
+  await db('hobbits').truncate()
+  await db.seed.run()
 })
 afterAll(async () => {
   // disconnect from the db
