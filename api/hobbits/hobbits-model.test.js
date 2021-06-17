@@ -25,7 +25,7 @@ describe('hobbits model', () => {
     })
     test('resturns the correct hobbits with all their props', async () => {
       const data = await Hobbit.getAll()
-      expect(data).toMatchObject('foo')
+      expect(data).toMatchObject([1,2,3])
     })
   })
 })
