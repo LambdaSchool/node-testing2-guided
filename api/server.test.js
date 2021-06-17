@@ -28,7 +28,8 @@ describe('[GET] /', () => {
 })
 describe('[POST] /hobbit', () => {
   it('returns a status 201 CREATED', async () => {
-    const res = 
+    const res = await request(server).post('/hobbits').send({ name: 'bilbo' })
+    
   })
   it('returns newly created hobbit', async () => {
 
