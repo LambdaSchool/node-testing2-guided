@@ -21,11 +21,11 @@ describe('hobbits model', () => {
   describe('getAll', () => {
     test('resturns all hobbits in db', async () => {
       const data = await Hobbit.getAll()
-      expect(data).toHaveLength(4)
+      expect(data).toHaveLength(3)
     })
     test('resturns the correct hobbits with all their props', async () => {
       const data = await Hobbit.getAll()
-      expect(data).toMatchObject([1,2,3])
+      expect(data).toMatchObject([{"id": 1, "name": "sam"}, {"id": 2, "name": "frodo"}, {"id": 3, "name": "pippin"}, {"id": 4, "name": "merry"}])
     })
   })
 })
