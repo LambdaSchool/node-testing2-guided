@@ -16,3 +16,7 @@ beforeEach(async () => {
 afterAll(async () => {
   await db.destroy()
 })
+
+describe('hobbits model', async () => {
+
+})
