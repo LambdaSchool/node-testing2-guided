@@ -6,11 +6,11 @@ test('sanity', () => {
 })
 
 beforeAll(async () => {
-  // reconstruct the db
+  
 })
 beforeEach(async () => {
-  // 
+  // reseed the tables
 })
 afterAll(async () => {
-
+  // disconnect from the db
 })
