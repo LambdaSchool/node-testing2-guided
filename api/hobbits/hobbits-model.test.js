@@ -35,7 +35,8 @@ describe('hobbits model', () => {
   })
   describe('getById', () => {
     test('returns teh hobbit by the given id', async () => {
-      
+      const sam = await Hobbit.getById(1)
+      expect(sam).toma
     })
   })
 })
