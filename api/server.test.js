@@ -23,6 +23,6 @@ describe('[GET] /', () => {
     const res = await request(server).get('/')
     expect(res.status).toBe(200)
     expect(res.body).toMatchObject({ api: 'up!' })
-    expect(res.body).toMatchSnapshot()
+    expect(res.body).toMatchSnapshot() // for large JSON 
   })
 })
