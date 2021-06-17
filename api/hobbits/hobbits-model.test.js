@@ -6,7 +6,8 @@ test('sanity', () => {
 })
 
 beforeAll(async () => {
-  
+  await db.migrate.rollback()
+  await db.migrate.latest()
 })
 beforeEach(async () => {
   // reseed the tables
