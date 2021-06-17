@@ -10,7 +10,7 @@ beforeAll(async () => {
   await db.migrate.latest()
 })
 beforeEach(async () => {
-  // reseed the tables
+  
 })
 afterAll(async () => {
   // disconnect from the db
