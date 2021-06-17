@@ -12,7 +12,7 @@ module.exports = {
       filename: './data/hobbits.db3',
     },
   },
-  testing: { // process.env.DB_ENV
+  testing: { // process.env.DB_ENV 'testing'
     ...common,
     connection: {
       filename: './data/test.db3',
