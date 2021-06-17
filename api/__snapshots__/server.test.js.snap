@@ -2,6 +2,6 @@
 
 exports[`[GET] / returns a status 200 OK 1`] = `
 Object {
-  "api": "up",
+  "api": "up!",
 }
 `;
