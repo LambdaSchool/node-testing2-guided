@@ -21,6 +21,6 @@ test('sanity', () => {
 describe('[GET] /', () => {
   it('returns a status 200 OK', async () => {
     const res = await request(server).get('/')
-    console.log(res)
+    expect(res.status).toBe(404)
   })
 })
