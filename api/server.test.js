@@ -17,3 +17,7 @@ afterAll(async () => {
 test('sanity', () => {
   expect(true).toBeTruthy()
 })
+
+describe('[GET] /', () => {
+  
+})
