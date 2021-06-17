@@ -19,5 +19,5 @@ test('sanity', () => {
 })
 
 describe('[GET] /', () => {
-  
+  it('returns a status 200 OK')
 })
