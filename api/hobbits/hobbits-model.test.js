@@ -19,6 +19,8 @@ afterAll(async () => {
 
 describe('hobbits model', () => {
   describe('getAll', () => {
-    test('restur')
+    test('resturns all hobbits in db', async () => {
+      
+    })
   })
 })
