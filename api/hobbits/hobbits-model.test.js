@@ -23,5 +23,9 @@ describe('hobbits model', () => {
       const data = await Hobbit.getAll()
       expect(data).toHaveLength(4)
     })
+    test('resturns all hobbits in db', async () => {
+      const data = await Hobbit.getAll()
+      expect(data).toHaveLength(4)
+    })
   })
 })
