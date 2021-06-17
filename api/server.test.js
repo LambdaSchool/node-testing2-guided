@@ -33,6 +33,7 @@ describe('[POST] /hobbit', () => {
   })
   it('returns newly created hobbit', async () => {
     const res = await request(server).post('/hobbits').send({ name: 'bilbo' })
+    conso
     expect(res.body).toMatchObject({ id: 5, name: 'bilbo' })
   })
 })
