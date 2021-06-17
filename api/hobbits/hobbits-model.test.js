@@ -17,6 +17,8 @@ afterAll(async () => {
   await db.destroy()
 })
 
-describe('hobbits model', async () => {
-
+describe('hobbits model', () => {
+  describe('getAll', () => {
+    test('restur')
+  })
 })
