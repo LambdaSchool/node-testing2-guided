@@ -6,7 +6,7 @@ const common = {
 }
 
 module.exports = {
-  development: { // process.env.NODE_ENV || 'development'
+  development: { // process.env.DB_ENV || 'development'
     ...common,
     connection: {
       filename: './data/hobbits.db3',
