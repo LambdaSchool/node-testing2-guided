@@ -5,9 +5,12 @@ test('sanity', () => {
   expect(process.env.DB_ENV).toBe('testing')
 })
 
-beforeAll(() => {
-
+beforeAll(async () => {
+  // reconstruct the db
 })
-beforeEach(() => {
-  
+beforeEach(async () => {
+  // 
+})
+afterAll(async () => {
+
 })
