@@ -41,7 +41,8 @@ describe('hobbits model', () => {
   })
   describe('insert', () => {
     test('returns the inserted row', async () => {
-      const input = { id}
+      const input = { name: 'bilbo' }
+      const bilbo = await Hobbit.insert(input)
     })
   })
 })
