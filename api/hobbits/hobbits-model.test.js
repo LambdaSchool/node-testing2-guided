@@ -14,5 +14,5 @@ beforeEach(async () => {
   await db.seed.run()
 })
 afterAll(async () => {
-  // disconnect from the db
+  await db.destroy()
 })
