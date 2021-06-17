@@ -34,6 +34,8 @@ describe('hobbits model', () => {
     })
   })
   describe('getById', () => {
-    test
+    test('returns teh hobbit by the given id', async () => {
+
+    })
   })
 })
