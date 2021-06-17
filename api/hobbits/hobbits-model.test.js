@@ -39,4 +39,9 @@ describe('hobbits model', () => {
       expect(sam).toMatchObject({ "id": 1, "name": "sam" })
     })
   })
+  describe('insert', () => {
+    test('returns the inserted row', async () => {
+      const input = { id}
+    })
+  })
 })
