@@ -23,6 +23,14 @@ describe('[GET] /', () => {
     const res = await request(server).get('/')
     expect(res.status).toBe(200)
     expect(res.body).toMatchObject({ api: 'up!' })
-    expect(res.body).toMatchSnapshot() // for large JSON 
+    expect(res.body).toMatchSnapshot() // for large JSON
+  })
+})
+describe('[POST] /hobbit', () => {
+  it('returns a status 201 CREATED', async () => {
+
+  })
+  it('returns newly created hobbit', async () => {
+
   })
 })
