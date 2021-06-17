@@ -44,6 +44,9 @@ describe('hobbits model', () => {
       const input = { name: 'bilbo' }
       const bilbo = await Hobbit.insert(input)
       expect(bilbo).toMatchObject({ "id": 5, "name": "bilbo" })
+
+      const data = await db('hobbits')
+      expect(data).toHaveLength(5)
     })
   })
 })
